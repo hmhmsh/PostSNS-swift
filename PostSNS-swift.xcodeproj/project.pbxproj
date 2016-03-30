@@ -12,8 +12,7 @@
 		4D5FCF6D1CAB968800AD1F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF6B1CAB968800AD1F96 /* Main.storyboard */; };
 		4D5FCF6F1CAB968800AD1F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF6E1CAB968800AD1F96 /* Assets.xcassets */; };
 		4D5FCF721CAB968800AD1F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF701CAB968800AD1F96 /* LaunchScreen.storyboard */; };
-		4D5FCF7D1CAB968800AD1F96 /* PostSNS_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCF7C1CAB968800AD1F96 /* PostSNS_swiftTests.swift */; };
-		4D5FCF881CAB968800AD1F96 /* PostSNS_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCF871CAB968800AD1F96 /* PostSNS_swiftUITests.swift */; };
+		4D5FCFD41CAB97DB00AD1F96 /* PostSNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCFD31CAB97DB00AD1F96 /* PostSNSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,8 @@
 		4D5FCF711CAB968800AD1F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5FCF731CAB968800AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCF781CAB968800AD1F96 /* PostSNS-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PostSNS-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCF7C1CAB968800AD1F96 /* PostSNS_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSNS_swiftTests.swift; sourceTree = "<group>"; };
-		4D5FCF7E1CAB968800AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCF831CAB968800AD1F96 /* PostSNS-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PostSNS-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCF871CAB968800AD1F96 /* PostSNS_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSNS_swiftUITests.swift; sourceTree = "<group>"; };
-		4D5FCF891CAB968800AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5FCFD31CAB97DB00AD1F96 /* PostSNSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostSNSViewController.swift; path = Sources/PostSNSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +73,8 @@
 		4D5FCF5B1CAB968800AD1F96 = {
 			isa = PBXGroup;
 			children = (
+				4D5FCFD21CAB97C300AD1F96 /* Source */,
 				4D5FCF661CAB968800AD1F96 /* PostSNS-swift */,
-				4D5FCF7B1CAB968800AD1F96 /* PostSNS-swiftTests */,
-				4D5FCF861CAB968800AD1F96 /* PostSNS-swiftUITests */,
 				4D5FCF651CAB968800AD1F96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,22 +102,12 @@
 			path = "PostSNS-swift";
 			sourceTree = "<group>";
 		};
-		4D5FCF7B1CAB968800AD1F96 /* PostSNS-swiftTests */ = {
+		4D5FCFD21CAB97C300AD1F96 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4D5FCF7C1CAB968800AD1F96 /* PostSNS_swiftTests.swift */,
-				4D5FCF7E1CAB968800AD1F96 /* Info.plist */,
+				4D5FCFD31CAB97DB00AD1F96 /* PostSNSViewController.swift */,
 			);
-			path = "PostSNS-swiftTests";
-			sourceTree = "<group>";
-		};
-		4D5FCF861CAB968800AD1F96 /* PostSNS-swiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D5FCF871CAB968800AD1F96 /* PostSNS_swiftUITests.swift */,
-				4D5FCF891CAB968800AD1F96 /* Info.plist */,
-			);
-			path = "PostSNS-swiftUITests";
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +243,7 @@
 			files = (
 				4D5FCF6A1CAB968800AD1F96 /* ViewController.swift in Sources */,
 				4D5FCF681CAB968800AD1F96 /* AppDelegate.swift in Sources */,
+				4D5FCFD41CAB97DB00AD1F96 /* PostSNSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCF7D1CAB968800AD1F96 /* PostSNS_swiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCF881CAB968800AD1F96 /* PostSNS_swiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PostSNS-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hmhm.PostSNS-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PostSNS-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hmhm.PostSNS-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +470,7 @@
 				4D5FCF8E1CAB968800AD1F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D5FCF8F1CAB968800AD1F96 /* Build configuration list for PBXNativeTarget "PostSNS-swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +479,7 @@
 				4D5FCF911CAB968800AD1F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D5FCF921CAB968800AD1F96 /* Build configuration list for PBXNativeTarget "PostSNS-swiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +488,7 @@
 				4D5FCF941CAB968800AD1F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
